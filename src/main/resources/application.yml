@@ -1,0 +1,36 @@
+person:
+  user-name: huangxin
+  boss: false
+  birth: 1999/6/28
+  age: 22
+  pet:
+    name: 湘湘
+    weight: 4.77
+  interests:
+    - 篮球
+    - 足球
+    - 羽毛球
+  animal:
+    - 猫咪
+  score:
+    数据库: 95
+    JAVA: 99
+  salays: [4396,2800,443]
+
+  allpets:
+    sick:
+      - {name: xiangxiang, weight: 4.77}
+    health:
+      - {name: dami,weight: 10.55}
+      - {name: xiaomi ,weight: 9.85}
+#spring:
+#  mvc:
+#    static-path-pattern: /res/**
+
+#spring:
+#  web:
+#    resources:
+#      static-locations: [classpath=/haha/]
+
+
+
