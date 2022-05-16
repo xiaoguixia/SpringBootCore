@@ -30,7 +30,12 @@ person:
 #spring:
 #  web:
 #    resources:
-#      static-locations: [classpath=/haha/]
-
-
+#      static-locations: [classpath=/haha
+spring:
+  servlet:
+    multipart:
+      max-file-size:
+        10000MB
+      max-request-size:
+        10000MB
 
