@@ -38,4 +38,40 @@ spring:
         10000MB
       max-request-size:
         10000MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis
+    username: root
+    password: 123456
+    druid:
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+        wall:
+          enabled: true
+        slf4j:
+          enabled: true
+
+
+      stat-view-servlet:
+        enabled: true
+        login-username: root
+        login-password: 123456
+      web-stat-filter:
+        url-pattern: /*
+        enabled: true
+      aop-patterns: com.example.springbootcore.*
+
+  jdbc:
+    template:
+      query-timeout: 3
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#  config-location: classpath:mybatis/mybatis-config.xml
+#   全局配置文件与configuration冲突 只能写一个
+  configuration:
+    map-underscore-to-camel-case: true
+
+
 

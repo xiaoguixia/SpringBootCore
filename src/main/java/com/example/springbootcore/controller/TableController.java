@@ -28,6 +28,9 @@ public class TableController {
     }
     @GetMapping("/editable_table")
     public String editable_table(){
+
+        System.out.println(1/0);
+
         return"table/editable_table";
     }
     @GetMapping("/pricing_table")
